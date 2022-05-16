@@ -1,0 +1,36 @@
+.custom-toolbar {
+    background-color: #1a3e55;    
+    height: 5rem;
+    align-items: center;
+
+}
+.main-button{
+    color: #fff;
+    width: 20rem;
+    height: 5rem;
+    font-family:"Roboto Slab";
+    font-size:2.5rem;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin: auto ;
+    display: flex;
+}
+.header-spacer {
+    flex:1 1 auto ;
+}
+.account-button {
+    font-size:3rem ;
+    color: #fff !important;
+}
+.my-travels-button{
+    color: #fff ;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    height: 5rem;
+    width:10rem;
+    font-family:"Roboto Slab";
+}
+.icon-display {
+    transform: scale(1.75);
+}
