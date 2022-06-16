@@ -4,14 +4,16 @@
     (closed)="resetTravel()"
   >
     <mat-expansion-panel-header>
-      <mat-panel-title>Name: {{ uniqueTravel.name }}</mat-panel-title>
+      <mat-panel-title>{{ uniqueTravel.name }}</mat-panel-title>
 
       <mat-panel-description>
-        <div class="description">Status: {{ uniqueTravel.status }}</div>
-        <div class="travel-date">
-          Date: {{ pipe.transform(uniqueTravel.travelDate, "dd/MM/yyyy") }}
+        <div class="description">
+          {{ uniqueTravel.status }}
         </div>
-        <div class="travel-budget">Budget: {{ travelBudget }} $</div>
+        <div class="travel-date">
+          {{ pipe.transform(uniqueTravel.travelDate, "dd/MM/yyyy") }}
+        </div>
+        <div class="travel-budget">{{ travelBudget }} $</div>
         <div class="travel-buttons">
           <button
             mat-icon-button
@@ -52,15 +54,15 @@
         <td mat-cell *matCellDef="let location">{{ location.name }}</td>
       </ng-container>
       <ng-container matColumnDef="address">
-        <th mat-header-cell *matHeaderCellDef>Address</th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Address</th>
         <td mat-cell *matCellDef="let location">{{ location.address }}</td>
       </ng-container>
       <ng-container matColumnDef="budget">
-        <th mat-header-cell *matHeaderCellDef>Budget</th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Budget</th>
         <td mat-cell *matCellDef="let location">{{ location.budget }}</td>
       </ng-container>
       <ng-container matColumnDef="description">
-        <th mat-header-cell *matHeaderCellDef>Description</th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Description</th>
         <td mat-cell *matCellDef="let location">{{ location.description }}</td>
       </ng-container>
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
