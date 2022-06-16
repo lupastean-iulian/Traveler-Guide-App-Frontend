@@ -1,0 +1,74 @@
+.card-content {
+  height: 80% !important;
+  padding: 0px !important;
+  margin: 95px 0px 95px 750px !important;
+}
+
+.login-input {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.buttonLogin {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  max-width: 400px;
+  height: 50px;
+  width: 100%;
+}
+.buttonRegister {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  max-width: 400px;
+  height: 40px;
+  width: 100%;
+  font-family: "Roboto Slab";
+  font-size: 16px;
+}
+
+@media screen and (max-width: 500px) {
+  .card-content {
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0px !important;
+    margin-top: 50px !important;
+  }
+  .form-title {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: "Roboto Slab";
+    font-size: 30px;
+  }
+  .login-input {
+    margin-top: 5%;
+    width: 100%;
+    font-family: "Roboto Slab";
+    font-size: 14px;
+  }
+  .buttonLogin {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 50px;
+    font-family: "Roboto Slab";
+    font-size: 20px;
+  }
+  .registerPart {
+    margin-top: 10%;
+    margin-bottom: 5%;
+
+    font-family: "Roboto Slab";
+    font-size: 16px;
+  }
+  .buttonRegister {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    max-width: 400px;
+    height: 40px;
+    width: 80%;
+    left: 10%;
+    font-family: "Roboto Slab";
+    font-size: 16px;
+  }
+}

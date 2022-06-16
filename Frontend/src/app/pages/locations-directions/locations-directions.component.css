@@ -1,0 +1,39 @@
+#container {
+  height: 80%;
+  display: flex;
+}
+
+#sidebar {
+  padding: 1rem;
+  width: 250px;
+  height: 100%;
+  overflow: auto;
+}
+
+#map {
+  flex-basis: 0;
+  flex-grow: 4;
+  height: 100%;
+}
+
+.starting-location {
+  padding: 20px 10px;
+  flex-direction: column;
+}
+.select-waypoints {
+  padding: 20px 10px;
+  flex-direction: column;
+}
+.end-location {
+  padding: 20px 10px;
+  flex-direction: column;
+}
+.travel-mode {
+  padding: 20px 10px;
+  flex-direction: column;
+}
+.submit-button {
+  padding: 20px 10px;
+  flex-direction: column;
+  display: flex;
+}

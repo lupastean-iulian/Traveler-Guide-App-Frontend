@@ -1,0 +1,86 @@
+<div id="container">
+  <div id="map"></div>
+  <div id="sidebar">
+    <form>
+      <div class="starting-location">
+        <mat-form-field appearance="fill"
+          ><mat-label>Select Start Location</mat-label>
+          <mat-select id="start" [(value)]="startLocation">
+            <mat-option
+              *ngFor="let location of locations | async"
+              [value]="location.name"
+            >
+              {{ location.name }}
+            </mat-option>
+          </mat-select></mat-form-field
+        >
+
+        <br />
+      </div>
+      <div class="select-waypoints">
+        <mat-form-field appearance="fill">
+          <mat-label>Select Aditional Locations:</mat-label> <br />
+          <br />
+          <mat-select
+            multiple
+            id="waypoints"
+            [formControl]="wayptsForm"
+            [(ngModel)]="waypts"
+          >
+            <mat-option
+              *ngFor="let location of locations | async"
+              [value]="location.name"
+            >
+              {{ location.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <br />
+      <div class="end-location">
+        <mat-form-field appearance="fill"
+          ><mat-label>Select End Location:</mat-label>
+          <mat-select id="end" [(value)]="endLocation">
+            <mat-option
+              *ngFor="let location of locations | async"
+              [value]="location.name"
+            >
+              {{ location.name }}
+            </mat-option>
+          </mat-select></mat-form-field
+        >
+      </div>
+
+      <br />
+      <div class="travel-mode">
+        <mat-form-field appearance="fill">
+          <mat-label>Mode of Travel: </mat-label>
+          <mat-select id="mode" [(value)]="travelMode">
+            <mat-option
+              *ngFor="let option of travelModes"
+              [value]="option.travelMode"
+            >
+              {{ option.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <br />
+      <div class="submit-button">
+        <button mat-button id="submit" color="primary">See Route</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+  defer
+></script>

@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from 'src/auth/login/login.component';
 import { RegisterComponent } from 'src/auth/register/register.component';
 import { AccountComponent } from './pages/account/account.component';
-import { CitiesComponent } from './pages/cities/cities.component';
+import CitiesComponent from './components/CreateUpdatePageComponents/add-or-remove-locations/cities.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LocationsComponent } from './pages/locations/locations.component';
 import { MyTravelsComponent } from './pages/my-travels/my-travels.component';
-import { NewTravelItineraryComponent } from './pages/new-travel-itinerary/new-travel-itinerary.component';
+import NewTravelItineraryComponent from './pages/create-update-travel-itinerary/new-travel-itinerary.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'cities', component: CitiesComponent },
@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'my-travels', component: MyTravelsComponent },
   { path: 'locations', component: LocationsComponent },
-  { path: 'new-travels', component: NewTravelItineraryComponent },
+  { path: 'new-travel', component: NewTravelItineraryComponent },
 ];
 
 @NgModule({
