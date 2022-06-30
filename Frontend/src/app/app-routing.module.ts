@@ -5,9 +5,8 @@ import { RegisterComponent } from 'src/auth/register/register.component';
 import { AccountComponent } from './pages/account/account.component';
 import CitiesComponent from './components/CreateUpdatePageComponents/add-or-remove-locations/cities.component';
 import { HomeComponent } from './pages/home/home.component';
-import { LocationsComponent } from './pages/locations/locations.component';
 import { MyTravelsComponent } from './pages/my-travels/my-travels.component';
-import NewTravelItineraryComponent from './pages/create-update-travel-itinerary/new-travel-itinerary.component';
+import NewTravelItineraryComponent from './pages/Create-Update-Travel-Itinerary/new-travel-itinerary.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'cities', component: CitiesComponent },
@@ -15,7 +14,6 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'my-travels', component: MyTravelsComponent },
-  { path: 'locations', component: LocationsComponent },
   { path: 'new-travel', component: NewTravelItineraryComponent },
 ];
 
@@ -23,4 +21,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

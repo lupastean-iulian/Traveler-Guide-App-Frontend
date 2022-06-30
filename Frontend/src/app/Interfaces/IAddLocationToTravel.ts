@@ -6,5 +6,4 @@ export interface IAddLocationToTravel {
   Description: string,
   Latitude: string,
   Longitude: string
-
 }

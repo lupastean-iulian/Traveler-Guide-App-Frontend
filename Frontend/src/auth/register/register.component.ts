@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, FormGroupDirective, NgForm, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { MustMatch } from '../Helpers/must-match.validator';
+import { MustMatch } from '../../assets/Validators/must-match.validator';
 import { CreateNewUser } from '../../app/services/user.service'
 
 @Component({

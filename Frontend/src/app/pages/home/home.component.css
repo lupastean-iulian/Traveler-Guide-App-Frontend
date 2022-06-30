@@ -1,5 +1,5 @@
 .main-content {
-  background-image: url(../../../Images/desktop-main-background.png);
+  background-image: url(../../../assets/Images/desktop-main-background.png);
   height: 80%;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,7 +22,7 @@
 }
 @media screen and (max-width: 500px) {
   .main-content {
-    background-image: url(../../../Images/main-background.png);
+    background-image: url(../../../assets/Images/main-background.png);
     height: 80%;
     background-position: center;
     background-repeat: no-repeat;
